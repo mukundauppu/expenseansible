@@ -1,6 +1,6 @@
 - name: install ansible
   hosts: local
-  became: yes
+  become: yes
   tasks:
    - name: install mysql
      ansible.built.in.package:
