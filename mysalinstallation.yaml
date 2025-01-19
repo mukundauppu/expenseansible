@@ -11,3 +11,9 @@
       name: mysqld
       state: started
       enabled: yes
+  - name: mysql instation documentation
+    community.mysql.mysql_db:
+      login_user: root
+      login_password: "{{ item }}"
+      register: mysql_info
+      ignore errors: true
